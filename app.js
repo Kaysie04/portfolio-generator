@@ -1,5 +1,13 @@
-const inquirer = require('inquirer');
-console.log(inquirer)
+import inquirer from 'inquirer';
+inquirer 
+    .prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is your name?'
+        }
+    ])
+    .then(answers => console.log(answers));
 // const fs = require('fs');
 // const generatePage = require('./src/page-template');
 
@@ -10,3 +18,5 @@ console.log(inquirer)
 
 //   console.log('Portfolio complete! Check out index.html to see the output!');
 // });
+
+
